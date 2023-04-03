@@ -50,14 +50,15 @@ int ganhou() {
 
 void abertura(){
 
-	printf("______________________________________________\n");
-	printf("Lembre-se de escrever letra em maiusculo!! ^-^\n");
-	printf("___________________Boa Sorte _________________\n\n\n");
+	printf("________________________________________________\n");
+	printf("Lembre-se de escrever a letra em maiusculo!! ^-^\n");
+	printf("____________________Boa Sorte __________________\n\n\n");
 
 	printf("  -------*-----*-------*-------*-----*------- \n");
-	printf("          Bem-vindo ao Jogo de Forca!\n");
+	printf("          Bem-vindo ao Jogo da Forca!\n");
 	printf("  -------*-----*-------*-------*-----*------- \n\n");
 
+    printf("           ~~~~ Dica: uma FRUTA ~~~~ \n");
 }
 
 void chuta() {
@@ -140,13 +141,13 @@ void escolhepalavra() {
 void adicionapalavra() {
     char quer;
 
-    printf("Voce deseja adicionar uma nova palavra no jogo (S/N)?");
+    printf("Voce deseja adicionar uma nova fruta no jogo (S/N)?");
     scanf(" %c", &quer);
 
     if(quer == 'S') {
         char novapalavra[TAMANHO_PALAVRA];
 
-        printf("Digite a nova palavra, em letras maiúsculas: ");
+        printf("Digite a nova palavra, em letras maiusculas: ");
         scanf("%s", novapalavra);
 
         FILE* f;
@@ -215,8 +216,8 @@ int main() {
         printf("   | |           | |        \n");
         printf("   | I I I I I I I |        \n");
         printf("   |  I I I I I I  |        \n");
-        printf("   \\_             _/       \n");
-        printf("     \\_         _/         \n");
+        printf("   \\__            _/       \n");
+        printf(" _____\\___________/______   \n");
         printf("       \\_______/           \n");
     }
 
